@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyper Complex HTML Generator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+  <script src="sketch.js"></script>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    h2 {
+      margin: 20px 0;
+      text-align: center;
+    }
+    #results {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+      overflow: auto;
+    }
+    iframe {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    @media (max-width: 768px) {
+      body {
+        font-size: 90%;
+      }
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Hyper Complex HTML and Poetic Analysis</h2>
+  <div id="results"></div>
+  <iframe id="generated-page" style="width: 90%; height: 500px;"></iframe>
+</body>
+</html>
